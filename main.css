@@ -1,0 +1,341 @@
+* {
+	position: relative;
+	font-family:  'Gudea', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden visible;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+h5 {
+	font-size: 120%;
+}
+
+.row100 {
+	height: 100vh;
+}
+
+.tbCenter {
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);	/* 2D chrome 4.0, safari 3.2, opera 15.0 */
+	-ms-transform: translateY(-50%); 		/* ie 9.0 */
+	-o-transform: translateY(-50%); 		/* opera 10.5 */
+	-moz-transform: translateY(-50%); 		/* firefox 3.5 */
+}
+
+
+.mainBar {
+	z-index: 5;
+	position: fixed;
+	text-align: center;
+	height: 60px;
+	width: 60px;
+	text-decoration: none;
+	letter-spacing: 2px;
+
+	padding: 0;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+}
+
+.mainBar:hover {
+	text-decoration: none;
+	color: white
+}
+
+
+
+/* info 鈕 */
+.mainBar:first-child { 
+	background: rgb(140, 115, 84);
+	left: 0%;
+	border-radius: 0px 0px 100% 0px;
+	-webkit-border-radius: 0px 0px 100% 0px;	/*chrome 4.0, safari 3.1*/
+	-moz-border-radius: 0px 0px 100% 0px; 		/*firefox 3.0*/
+	box-shadow: inset -3px -2px 10px rgba(0, 0, 0, 0.5),
+				1px 1px 10px rgba(0, 0, 0, 0.3), 						
+				1px 1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset -3px -2px 10px rgba(0, 0, 0, 0.5), 	/*chrome 4.0, safari 3.1*/
+						1px 1px 10px rgba(0, 0, 0, 0.3), 
+						1px 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset -3px -2px 10px rgba(0, 0, 0, 0.5),		/*firefox 3.0*/
+					 1px 1px 10px rgba(0, 0, 0, 0.3), 
+					 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mainBar:first-child > span {
+	left: -5px;
+	top: 10px;
+}
+
+/* Exp鈕 */
+.mainBar:nth-child(2) {
+	background: rgb(140, 115, 84);
+	right: 0%;
+	border-radius: 0px 0px 0px 100% ;
+	-webkit-border-radius: 0px 0px 0px 100%;	/*chrome 4.0, safari 3.1*/
+	-moz-border-radius: 0px 0px 0px 100% ;		/*firefox 3.0*/
+	box-shadow: inset 3px -2px 10px rgba(0, 0, 0, 0.5),
+				-1px 1px 10px rgba(0, 0, 0, 0.3), 
+				-1px 1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 3px -2px 10px rgba(0, 0, 0, 0.5),	/*chrome 4.0, safari 3.1*/
+						-1px 1px 10px rgba(0, 0, 0, 0.3), 
+						-1px 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 3px -2px 10px rgba(0, 0, 0, 0.5),	/*firefox 3.0*/
+					 -1px 1px 10px rgba(0, 0, 0, 0.3), 
+					 -1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mainBar:nth-child(2) > span {
+	top: 10px;
+	left: 7px;
+}
+
+/* skill鈕 */
+.mainBar:nth-child(3) {
+	background: rgb(140, 115, 84);
+	right: 0%;
+	bottom: 0%;
+	border-radius: 100% 0px 0px 0px;
+	-webkit-border-radius: 100% 0px 0px 0px;	/*chrome 4.0, safari 3.1*/
+	-moz-border-radius: 100% 0px 0px 0px;		/*firefox 3.0*/
+	box-shadow: inset 3px 2px 10px rgba(0, 0, 0, 0.5),
+				-1px -1px 10px rgba(0, 0, 0, 0.3), 
+				-1px -1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 3px 2px 10px rgba(0, 0, 0, 0.5),	/*chrome 4.0, safari 3.1*/
+						-1px -1px 10px rgba(0, 0, 0, 0.3), 
+						-1px -1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 3px 2px 10px rgba(0, 0, 0, 0.5),		/*firefox 3.0*/
+					 -1px -1px 10px rgba(0, 0, 0, 0.3), 
+					 -1px -1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mainBar:nth-child(3) > span {
+	top: 24px;
+	left: 7px;
+}
+
+/* port鈕 */
+.mainBar:nth-child(4) {
+	background: rgb(140, 115, 84);
+	left: 0%;
+	bottom: 0%;
+	border-radius: 0px 100% 0px 0px;
+	-webkit-border-radius: 0px 100% 0px 0px;	/*chrome 4.0, safari 3.1*/
+	-moz-border-radius: 0px 100% 0px 0px;		/*firefox 3.0*/
+	box-shadow: inset -3px 2px 10px rgba(0, 0, 0, 0.5),
+				1px -1px 10px rgba(0, 0, 0, 0.3), 
+				1px -1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset -3px 2px 10px rgba(0, 0, 0, 0.5),	/*chrome 4.0, safari 3.1*/
+						1px -1px 10px rgba(0, 0, 0, 0.3), 
+						1px -1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset -3px 2px 10px rgba(0, 0, 0, 0.5),	/*firefox 3.0*/
+				 	 1px -1px 10px rgba(0, 0, 0, 0.3), 
+				 	 1px -1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mainBar:nth-child(4) > span {
+	top: 24px;
+	left: -7px;
+}
+
+
+
+section {
+	width: 100vw;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);	/* 2D chrome 4.0, safari 3.2, opera 15.0 */
+	-ms-transform: translateX(-50%); 		/* ie 9.0 */
+	-o-transform: translateX(-50%); 		/* opera 10.5 */
+	-moz-transform: translateX(-50%); 		/* firefox 3.5 */
+}
+
+#info {
+	background-color: rgb(255, 251, 245);
+	box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3);	/*chrome 4.0, safari 3.1*/
+	-moz-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3);	/*firefox 3.0*/
+}
+
+#info > div {
+	text-align: center;
+	padding: 0 4vw;
+	z-index: 1;
+}
+
+#info > div  h3 {
+	margin-bottom: 20px;
+}
+
+#info p {
+	margin-bottom: 10px;
+}
+
+#info p:nth-child(4),
+#info p:nth-child(5) {
+	display: block;
+	text-align: left;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 165px;
+	font-size: 85%;
+
+	margin: 0;
+	line-height: 1.5;
+}
+
+#info > div > p > img {
+	box-sizing: content-box;
+	padding-right: 8px;
+	height: 15px;
+	width: 15px;
+}
+
+
+
+#experience {
+	color: white;
+	text-align: center;
+	background-color: rgba(70, 70, 70, 1);
+	padding: 0 3vw;
+	box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.8), 
+				0px -20px 80px rgba(0, 0, 0, 0.3), 
+				0px -2px 50px rgba(0, 0, 0, 0.5), 
+				0px -1px 5px rgba(0, 0, 0, 0.8);
+}
+
+#experience > div {
+	width: 90vw;
+	z-index: 2;
+}
+
+#experience p {
+	font-size: 90%;
+	margin-bottom: 0px;
+}
+
+#experience > .tbCenter > ul {
+	display: inline-block;
+	text-align: left;
+	font-size: 90%;
+	padding: 10px;
+	list-style-position: outside;
+	left: 3vh;
+
+
+}
+
+
+
+
+#skill {
+	background-color: rgb(255, 251, 245);
+	text-align: center;
+	box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3),
+				0px -20px 80px rgba(0, 0, 0, 0.3), 
+				0px -2px 50px rgba(0, 0, 0, 0.5), 
+				0px -1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.skillGroup {
+	width: 80vw;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.skillGroup > div:first-child {
+	margin-bottom: 25px;
+}
+
+#skill > .tbCenter {
+	margin-bottom: 20px;
+	z-index: 3;
+}
+
+.skillGroup img {
+	width: 25vw;
+	max-width: 150px;
+}
+
+#skill h1 {
+	margin-bottom: 5vh;
+}
+
+
+
+
+#portfolio {
+	min-height: 100vh;
+	background-color: rgba(70, 70, 70, 1);
+	height: auto;
+	color: white;
+	box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.8), 
+				0px -20px 80px rgba(0, 0, 0, 0.3), 
+				0px -2px 50px rgba(0, 0, 0, 0.5), 
+				0px -1px 5px rgba(0, 0, 0, 0.8);
+	
+}
+
+#portfolio .portCtn {
+	height: auto;
+	width: auto;
+	z-index: 4;
+}
+
+#portfolio .block {
+	width: 80vw;
+	max-width: 400px;
+	margin: 4vh 2vw;
+
+}
+
+#portfolio .block:first-child {
+	border: 1px white solid;
+}
+
+#portfolio h1 {
+	height: 45px;
+	padding: 25px 0%;
+	margin-bottom: 10%;
+}
+
+#portfolio h3 {
+	text-align: center;
+	font-size: 200%;
+
+}
+
+#portfolio a {
+	display: inline-block;
+	width: 100%;
+	max-width: 350px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#portfolio img {
+	width: 100%;
+	box-shadow:  0 0 10px rgba(0, 0, 0, 0.5),  0 0 1px rgba(0, 0, 0, 0.8) ; 
+}
+
