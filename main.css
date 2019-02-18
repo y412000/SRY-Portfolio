@@ -66,6 +66,36 @@ a {
 #realNav .navbar-toggler {
 	border: none;
 }
+<<<<<<< HEAD
+
+/*轉換成x */
+#realNav .icon-bar:nth-of-type(1) {
+	transform: rotate(-135deg);
+	margin: 11px 0 -17px 0;
+}
+#realNav .icon-bar:nth-of-type(2) {
+	transform: rotateY(90deg);
+	top: 0.5rem;
+}
+#realNav .icon-bar:nth-of-type(3) {
+	transform: rotate(135deg);
+	margin-bottom: 12px;
+}
+
+/*轉換前 三 */
+#realNav .collapsed .icon-bar:nth-of-type(1) {
+	transform: rotate(0);
+	margin: 0px;
+}
+#realNav .collapsed .icon-bar:nth-of-type(2) {
+	transform: rotateY(0);
+	top: 0px;
+}
+#realNav .collapsed .icon-bar:nth-of-type(3) {
+	transform: rotate(0);
+	margin-bottom: 0px;
+	top: 0px;
+=======
 
 /*轉換成x */
 #realNav .icon-bar:nth-of-type(1) {
@@ -97,10 +127,37 @@ a {
 }
 /*漢堡鈕動畫end*/
 
+
+#fakeNav li {
+	height: 25vh;
+}
+
+#fakeNav .nav-link {
+	height: 100%;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 2rem;
+	font-weight: bolder;
+	color: rgb(255, 153, 184);
+	border: 1px red solid;
+>>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
+}
+/*漢堡鈕動畫end*/
+
+<<<<<<< HEAD
 #realNav .nav-link:hover {
+=======
+#realNav .nav-link:hover,
+#fakeNav .nav-link:hover {
+>>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
 	color: rgb(255, 71, 126);
 }
 
+#fakeNav .nav-link > span {
+	display: inline-block;
+	top: 50%;  /* 可上下移動+-20% */
+	transform: translateY(-50%);
+	border: 1px black solid;
+}
 
 #realNav {
 	height: 60px;
@@ -109,7 +166,11 @@ a {
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 100%;
 	font-weight: bolder;
+<<<<<<< HEAD
 	z-index: 10;
+=======
+	z-index: 100;
+>>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
 }
 
 #realNav .nav-link {
@@ -141,7 +202,10 @@ section {
 	transform: translateX(-50%);
 	min-height: 100vh;
 	height: 1px;
+<<<<<<< HEAD
 	opacity: 0;
+=======
+>>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
 }
 
 
