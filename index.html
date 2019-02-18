@@ -4,125 +4,53 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<!--bootstrap-->
+		<!--bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!--bootstrap -->
 		
-        <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Gudea|Russo+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
         <link href="./main.css" type="text/css" rel="stylesheet">
 		<link href="./media.css" type="text/css" rel="stylesheet"> 
         <title>SRYuan Portfolio</title>
     </head>
     
 	<body>
-		<a class="mainBar" href="#info"><span>Info</span></a>
-		<a class="mainBar" href="#experience"><span>Exp</span></a>
-		<a class="mainBar" href="#skill"><span>Skill</span></a>
-		<a class="mainBar" href="#portfolio"><span>Port</span></a>
-
-		
-		<div id="backgroundImage" class="row100"></div>
-		
-		<section class="container-fliud">
-			<div id="info" class="row100 sticky-top scrollSpy">
-				<div class="tbCenter d-flex flex-column">
-					<h1>Shiu Ruei-Yuan</h1>
-					<h3>Front-End Developer</h3>
-					<p>B.S. degree, Statistics and Information Science, 2014 Fu Jen University, New Taipei City </p>
-					<p><img src="image/email.png"/>y412000@hotmail.com</p>
-					<p><img src="image/tel.png"/>0917 364 072</p>		
-
-				</div>
-			</div>
-			
-			<div id="experience" class="row100 sticky-top scrollSpy">
-				<div class="tbCenter">
-					<h1>Experience</h1>
-					<h5>Sale Assistance in Q &#38; S co., Ltd.</h5>
-					<p>Aug / 2014 - Apr / 2018</p>
-					<ul>
-						<li>Contacted and Corresponded with foreign clients</li>
-						<li>Oversaw and Formulated production, exportation schedule </li>
-						<li>Attended and Handled five International exhibitions</li>
-						<ul>
-							<li>Picked goods on display in exhibition</li>
-							<li>Increased attraction of booth by posters with my own hands</li>
-							<li>Conserved clients data and Analyzed potential of cooperation</li>
-						</ul>
-						<li>Enhance data analysis and implemented working efficiency</li>
+		<div class="row container-fluid">
+			<nav id="realNav" class="navbar navbar-expand-md fixed-top bg-light justify-content-center">
+				
+				<a class="navbar-brand col-8 col-md-3 text-center" href="#">Shiu Ruei-Yuan</a>
+				<button id="iconBar" class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#mainBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse text-center" id="mainBar">
+					<ul class="navbar-nav">
+						<li id="rlink1" class="nav-item">
+							<a class="nav-link">ABOUT</a>
+						</li>
+						<li id="rlink2" class="nav-item">
+							<a class="nav-link">EXPERIENCE</a>
+						</li>
+						<li id="rlink3" class="nav-item">
+							<a class="nav-link">SKILL</a>
+						</li>
+						<li id="rlink4" class="nav-item">
+							<a class="nav-link">PORTFOLIO</a>
+						</li>
 					</ul>
-				</div>	
-			</div>
-			
-			<div id="skill" class="row100 sticky-top scrollSpy">
-				<div class="tbCenter row">
-					<h1 class="col-12">Skill</h1>
-					
-					<div class="skillGroup d-flex justify-content-center flex-wrap">
-						<div class="">
-							<img src="image/htmllogo.png"/>
-							<p>HTML</p>
-						</div>
-						<div class="">
-							<img src="image/csslogo.png"/>
-							<p>CSS</p>	
-						</div>
-						<div class="">
-							<img src="image/javascriptlogo.png"/>
-							<p>JavaScript</p>
-						</div>
-						<br>
-						<div class="">
-							<img src="image/jquerylogo.png"/>
-							<p>jQuery</p>
-						</div>
-						<div class="">
-							<img src="image/bootstraplogo.png"/>
-							<p>Bootstrap</p>
-						</div>
-					</div>
 				</div>
-			</div>
-			
-			
-			<div id="portfolio" class="sticky-top scrollSpy">
-				
-				<h1 class="col-12">Portfolio</h1>
-				
-				<div class="portCtn d-flex justify-content-center flex-wrap">
-					<div class="block">
-						<h3 class="tbCenter">Web</h3>
-					</div>
-					<div class="block">
-						<a href="https://y412000.github.io/Itasine/">
-							<img src="image/Itasine.png"/>
-						</a>
-					</div>
-				</div>
-				
-				<div class="portCtn d-flex justify-content-center flex-wrap">
-					<div class="block">
-						<h3 class="tbCenter">Poster</h3>
-					</div>
-					<div class="block">
-						<img src="image/poster1.jpg"/>
-					</div>
-					
-					<div class="block">
-						<img src="image/poster2.jpg"/>
-					</div>
-					
-					<div class="block">
-						<img src="image/poster3.jpg"/>
-					</div>
-				</div>
-				
-			</div>
-			
+			</nav>
+		</div>
+		
+
+		<section id="myContent" class="container">
+
 		</section>
-		<script src="effect.js"></script>
+		<script src="./jquery/ajax.js"></script>
 	</body>
