@@ -95,7 +95,7 @@ a {
 	transform: rotate(0);
 	margin-bottom: 0px;
 	top: 0px;
-=======
+}
 
 /*轉換成x */
 #realNav .icon-bar:nth-of-type(1) {
@@ -139,16 +139,14 @@ a {
 	font-weight: bolder;
 	color: rgb(255, 153, 184);
 	border: 1px red solid;
->>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
+
 }
 /*漢堡鈕動畫end*/
 
-<<<<<<< HEAD
-#realNav .nav-link:hover {
-=======
+
 #realNav .nav-link:hover,
 #fakeNav .nav-link:hover {
->>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
+
 	color: rgb(255, 71, 126);
 }
 
@@ -166,11 +164,7 @@ a {
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 100%;
 	font-weight: bolder;
-<<<<<<< HEAD
 	z-index: 10;
-=======
-	z-index: 100;
->>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
 }
 
 #realNav .nav-link {
@@ -202,10 +196,7 @@ section {
 	transform: translateX(-50%);
 	min-height: 100vh;
 	height: 1px;
-<<<<<<< HEAD
 	opacity: 0;
-=======
->>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
 }
 
 
@@ -366,27 +357,3 @@ section {
 	opacity: 0;
 }
 
-/*
-#portCtn {
-	transform: translateX(-50%);
-}
-
-#portCtn > div {
-	margin-bottom: 70px;
-}
-
-#portCtn > div > img {
-	margin: 10px 0px;
-	height: 100%;
-}
-
-#portCtn > div > a {
-	margin: 10px 0px;
-}
-
-#portCtn > div > a > img {
-	width: 100%;
-	height: 100%;
-}
-
-*/

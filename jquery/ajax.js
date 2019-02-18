@@ -5,14 +5,14 @@ $(document).ready(function(){
 	let flagPort = 0;
 	
 	recoverNav();
-<<<<<<< HEAD
+
 	$("section").animate({opacity: 1}, 800);
 	setTimeout(function(){
 		ajax("about");
 	}, 100);
-=======
+
 	ajax("about");
->>>>>>> 449498e2de74e80ddb96adc4eb51c132a49a4792
+
 
 	$(window).resize(function(){
 		recoverNav();
@@ -53,7 +53,7 @@ $(document).ready(function(){
 	}
 	
 	function ajax(fileName){
-		$("#myContent").load( fileName + ".html", function() {
+		$("#myContent").load( "./txt/" + fileName + ".html", function() {
 			if( fileName == "about" ) {
 				flagAbt = 1;
 				flagExp = 0;
